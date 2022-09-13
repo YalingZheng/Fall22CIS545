@@ -10,9 +10,9 @@ int countWords(FILE *f){
    }
    return count;
 }
-int main(String[] argv){
+int main(int argc, char *argv[]){
    int wordCount = 0;
-   FILE *rFile = fopen(artv[1], "r");
+   FILE *rFile = fopen(argv[1], "r");
    wordCount += countWords(rFile);
    printf("File about.me number of characters: %d\n", wordCount);
    return 0;
